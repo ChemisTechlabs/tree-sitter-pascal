@@ -3,6 +3,7 @@
 Grammar for Pascal and its dialects Delphi and Freepascal.
 
 ## Supported language features
+
 - Classes, records, interfaces, class helpers
 - Nested declarations
 - Variant records
@@ -13,6 +14,7 @@ Grammar for Pascal and its dialects Delphi and Freepascal.
 - FPC PasCocoa extensions
 
 ## Tree-sitter features:
+
 - Syntax highlighting
 - Scopes
 
