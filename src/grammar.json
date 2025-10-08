@@ -9595,36 +9595,16 @@
     }
   ],
   "conflicts": [
-    [
-      "_declProc"
-    ],
-    [
-      "_declOperator"
-    ],
-    [
-      "declConst"
-    ],
-    [
-      "declVar"
-    ],
-    [
-      "declType"
-    ],
-    [
-      "declProp"
-    ],
-    [
-      "declProcFwd"
-    ],
-    [
-      "declVars"
-    ],
-    [
-      "declConsts"
-    ],
-    [
-      "declTypes"
-    ]
+    ["_declProc"],
+    ["_declOperator"],
+    ["declConst"],
+    ["declVar"],
+    ["declType"],
+    ["declProp"],
+    ["declProcFwd"],
+    ["declVars"],
+    ["declConsts"],
+    ["declTypes"]
   ],
   "precedences": [],
   "externals": [],

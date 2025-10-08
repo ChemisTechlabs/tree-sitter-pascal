@@ -6,12 +6,7 @@
       "camelcase": "Pascal",
       "title": "Pascal",
       "scope": "source.pascal",
-      "file-types": [
-        "pp",
-        "lpr",
-        "dpr",
-        "pas"
-      ],
+      "file-types": ["pp", "lpr", "dpr", "pas"],
       "injection-regex": "^pascal$",
       "class-name": "TreeSitterPascal"
     }
