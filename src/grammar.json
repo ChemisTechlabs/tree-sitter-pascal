@@ -2517,7 +2517,7 @@
           },
           {
             "type": "PATTERN",
-            "value": "[.,:;+\\-*\\[\\]<>&%$]"
+            "value": "[.,:;+\\\\\\-*\\[\\]<>&%$]"
           },
           {
             "type": "PATTERN",
@@ -8764,11 +8764,6 @@
       "value": "uses",
       "flags": "i"
     },
-    "kInterface": {
-      "type": "PATTERN",
-      "value": "interface",
-      "flags": "i"
-    },
     "kDispInterface": {
       "type": "PATTERN",
       "value": "dispinterface",
@@ -8906,6 +8901,11 @@
     "kClass": {
       "type": "PATTERN",
       "value": "class",
+      "flags": "i"
+    },
+    "kInterface": {
+      "type": "PATTERN",
+      "value": "interface",
       "flags": "i"
     },
     "kObject": {
@@ -9595,19 +9595,40 @@
     }
   ],
   "conflicts": [
-    ["_declProc"],
-    ["_declOperator"],
-    ["declConst"],
-    ["declVar"],
-    ["declType"],
-    ["declProp"],
-    ["declProcFwd"],
-    ["declVars"],
-    ["declConsts"],
-    ["declTypes"]
+    [
+      "_declProc"
+    ],
+    [
+      "_declOperator"
+    ],
+    [
+      "declConst"
+    ],
+    [
+      "declVar"
+    ],
+    [
+      "declType"
+    ],
+    [
+      "declProp"
+    ],
+    [
+      "declProcFwd"
+    ],
+    [
+      "declVars"
+    ],
+    [
+      "declConsts"
+    ],
+    [
+      "declTypes"
+    ]
   ],
   "precedences": [],
   "externals": [],
   "inline": [],
-  "supertypes": []
+  "supertypes": [],
+  "reserved": {}
 }
