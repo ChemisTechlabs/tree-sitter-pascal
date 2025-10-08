@@ -2,34 +2,49 @@
   "name": "tree-sitter-pascal",
   "version": "0.10.0",
   "description": "Tree sitter grammar for Pascal (Delphi, Freepascal)",
+  "repository": "https://github.com/Isopod/tree-sitter-pascal",
+  "license": "MIT",
+  "author": {
+    "name": "Benjamin Gray",
+    "email": "benjamin@isopod.dev"
+  },
   "main": "bindings/node",
   "types": "bindings/node",
-  "repository": null,
-  "author": "Benjamin Gray",
-  "license": "MIT",
+  "keywords": [
+    "incremental",
+    "parsing",
+    "tree-sitter",
+    "pascal",
+    "delphi",
+    "freepascal"
+  ],
   "devDependencies": {
     "prebuildify": "^6.0.1",
-    "tree-sitter-cli": "^0.24.5"
+    "tree-sitter-cli": "^0.25.10"
   },
   "scripts": {
-    "build": "tree-sitter generate && node-gyp build",
-    "test": "tree-sitter test && tree-sitter parse examples/* --quiet --time",
     "install": "node-gyp-build",
+    "prestart": "tree-sitter build --wasm",
+    "start": "tree-sitter playground",
+    "test": "tree-sitter test && tree-sitter parse examples/* --quiet --time",
     "prebuildify": "prebuildify --napi --strip"
   },
   "files": [
     "grammar.js",
+    "tree-sitter.json",
     "binding.gyp",
     "prebuilds/**",
     "bindings/node/*",
     "queries/*",
-    "src/**"
+    "src/**",
+    "*.wasm"
   ],
   "dependencies": {
+    "node-addon-api": "^8.2.1",
     "node-gyp-build": "^4.8.4"
   },
   "peerDependencies": {
-    "tree-sitter": "^0.22.0"
+    "tree-sitter": "^0.25.0"
   },
   "peerDependenciesMeta": {
     "tree_sitter": {
